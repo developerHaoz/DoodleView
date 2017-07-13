@@ -27,6 +27,8 @@ abstract class BaseAction {
 
     public abstract void move(float mx, float my);
 
+}
+
     class MyPoint extends BaseAction {
         private float x;
         private float y;
@@ -305,7 +307,7 @@ abstract class BaseAction {
     }
 
 
-}
+
 
 
 
