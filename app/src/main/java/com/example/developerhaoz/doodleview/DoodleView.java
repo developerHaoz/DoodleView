@@ -93,12 +93,12 @@ public class DoodleView extends SurfaceView implements SurfaceHolder.Callback {
             return false;
         }
 
-        float touchX = event.getRawX();
-        float touchY = event.getRawY();
+        float touchX = event.getX();
+        float touchY = event.getY();
 
         switch (action) {
             case MotionEvent.ACTION_DOWN:
-                setCurAction(touchX, touchY - 147);
+                setCurAction(touchX, touchY);
                 break;
             case MotionEvent.ACTION_MOVE:
                 Canvas canvas = mSurfaceHolder.lockCanvas();
@@ -106,7 +106,7 @@ public class DoodleView extends SurfaceView implements SurfaceHolder.Callback {
                 for (BaseAction baseAction : mBaseActions) {
                     baseAction.draw(canvas);
                 }
-                curAction.move(touchX, touchY - 147);
+                curAction.move(touchX, touchY);
                 curAction.draw(canvas);
                 mSurfaceHolder.unlockCanvasAndPost(canvas);
                 break;
@@ -118,7 +118,7 @@ public class DoodleView extends SurfaceView implements SurfaceHolder.Callback {
             default:
                 break;
         }
-        return super.onTouchEvent(event);
+        return true;
     }
 
     /**
@@ -281,7 +281,7 @@ public class DoodleView extends SurfaceView implements SurfaceHolder.Callback {
     }
 
     enum ActionType {
-        Point, Path, Line, Rect, Circle, FillEcRect, FilledCircle, Erasre
+        Point, Path, Line, Rect, Circle, FillEcRect, FilledCircle
     }
 }
 
