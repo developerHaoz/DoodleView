@@ -294,7 +294,7 @@ abstract class BaseAction {
             paint.setStyle(Paint.Style.FILL);
             paint.setColor(color);
             paint.setStrokeWidth(size);
-            canvas.drawCircle((startX + stopX) / 2, (startX + stopY) / 2, radius, paint);
+            canvas.drawCircle((startX + stopX) / 2, (startY + stopY) / 2, radius, paint);
         }
 
         @Override
