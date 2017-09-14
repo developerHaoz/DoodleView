@@ -6,3 +6,4 @@
 展示一波最终的效果
 
 ![DoodleView](http://upload-images.jianshu.io/upload_images/4334738-43c36fbde1f6b882.gif?imageMogr2/auto-orient/strip)
+欢迎 star 和 fork
