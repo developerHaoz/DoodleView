@@ -5,6 +5,7 @@
 - 实现各种类型的 DialogFragment
 
 **在写正文之前，先来一波效果展示吧**
+
 ![DialogFragmentDemos.gif](http://upload-images.jianshu.io/upload_images/4334738-987d3051423eaf57.gif?imageMogr2/auto-orient/strip)
 
 ### 一、DialogFragment 是什么
