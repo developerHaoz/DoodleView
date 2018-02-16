@@ -2,6 +2,7 @@
 > 最近项目中需要用到涂鸦的功能，在 Github 上搜了一圈也没找到适合的库，索性就自己撸一个出来，正好复习一下自定义 View 的知识。写完之后怎么可以自己藏着呢，当然得写篇博客分享给大家。
 
 在开始本文的内容之前，先展示一波最终的效果
+
 ![DoodleView](http://upload-images.jianshu.io/upload_images/4334738-43c36fbde1f6b882.gif?imageMogr2/auto-orient/strip)
 
 可以看到这个这个自定义 View 的功能还是很丰富的，无论是设置画笔的形状、颜色、粗细，还是进行重置和保存，该有的 API，基本都已经实现了。有需要的读者直接 [点击这里](https://github.com/developerHaoz/DoodleView) ，希望帮忙点个 star，哈哈哈。
